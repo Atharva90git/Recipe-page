@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .img1{ width: 96%; height: 500px; border-radius: 25px;}
+    .title {
+    font-family: "Young Serif", serif;
+    font-weight: 100;
+    font-size: 75px;
+    font-style: normal;
+    }
+    .para{font-size: 30px;
+          font-family: "Outfit", sans-serif;
+          color: rgb(79, 78, 78);
+          
+        }
+    body{
+      margin: 40px 40px 40px 40px ;
+    }    
+    .prep_time{
+      font-size: 30px;
+      color: rgb(164, 0, 131);
+
+    }
+    .prep{
+      font-family: "Outfit", sans-serif;
+      background-color:rgb(255, 241, 252) ;
+      border-radius: 20px;
+      padding: 7px 7px 7px 20px;
+      width: 90%;
+
+    }
+    .title1 {
+    font-family: "Young Serif", serif;
+    font-weight: 100;
+    font-size: 45px;
+    font-style: normal;
+    color: rgba(144, 48, 0, 0.674);
+    }
+    ol {counter-reset: item;}
+    ol li{display: block;
+        }
+    ol li:before{
+      content: counter(item)". ";
+      counter-increment: item;
+      color:rgba(144, 48, 0, 0.674);
+      position:absolute;
+      left: 60px;
+      
+      
+    }
+    .tbl{
+      margin: 20px 60px 60px 90px;
+      width: 90%;
+      border-collapse: collapse;
+      
+    }
+    tr{
+      border-bottom:2px solid rgb(212, 212, 212);
+      
+    }
+    td{
+      padding-left: 20px;
+    }
+    
+    
+  </style>
+</head>
+<body>
+<div>
+  <img class="img1" src="assets\images\image-omelette.jpeg"/>
+</div>
+<div>
+  <h1 class="title">Simple Omelette Recipe</h1>
+
+  <p class="para">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+  </p>
+  <div class="prep">
+  <h2 class="prep_time">Preparation time</h2>
+  <ul >
+
+  <li style="padding-bottom: 7px;"><b>Total:</b> Approximately 10 minutes</li>
+  <li style="padding-bottom: 7px;"><b>Preparation:</b> 5 minutes</li>
+  <li style="padding-bottom: 7px;"><b>Cooking:</b> 5 minutes</li>
+  </ul>
+  </div>
+  <div class="para">
+  <h2 class="title1">Ingredients
+  </h2>
+  <ul style="list-style-type: square;">
+  <li style="padding-bottom: 7px;">2-3 large eggs</li>
+  <li style="padding-bottom: 7px;">Salt, to taste</li>
+  <li style="padding-bottom: 7px;">Pepper, to taste</li>
+  <li style="padding-bottom: 7px;">1 tablespoon of butter or oil</li>
+  <li style="padding-bottom: 7px;">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+  </ul>
+  </div>
+  <div class="para">
+  <h2 class="title1">Instructions</h2>
+  <ol style="padding-left: 65px;">
+
+  <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+  You can add a tablespoon of water or milk for a fluffier texture.</li>
+
+  <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+
+  <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+  the eggs evenly coat the surface.</li>
+
+  <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+  middle, sprinkle your chosen fillings over one half of the omelette.</li>
+
+  <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
+  fillings. Let it cook for another minute, then slide it onto a plate.</li>
+
+  <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+  </ol>
+  </div>
+  <div class="para">
+    <h2 class="title1">
+  Nutrition
+</h2>
+  The table below shows nutritional values per serving without the additional fillings.
+<table class="tbl">
+  <tr>
+  <td >Calories</td>
+  <td style="padding-left: 500px; padding-bottom: 20px; color: rgba(144, 48, 0, 0.674);"><b>277kcal</b></td></tr>
+<tr>
+  <td>Carbs</td>
+  <td style="padding-left: 500px; padding-bottom: 20px; color: rgba(144, 48, 0, 0.674);"><b>0g</b></td></tr>
+<tr>
+ <td> Protein</td>
+  <td style="padding-left: 500px; padding-bottom: 20px; color: rgba(144, 48, 0, 0.674);"><b>20g</b></td></tr>
+<tr>
+  <td>Fat</td>
+  <td style="padding-left: 500px; padding-bottom: 20px; color: rgba(144, 48, 0, 0.674);"><b>22g</b></td></tr>
+</table>
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Atharva</a>.
+  </div>
+</body>
+</html>
